@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.firstContainer {
+  background: #ccc url("./assets/images/headerImg.png") no-repeat;
+  background-size: 100%, 100%;
+  padding: 90px 140px 0px 140px;
+}
+.AppHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mob-wrapper {
+  display: none;
+}
+
+.AppLogo {
+  width: 150px;
+}
+
+.secondContainer {
+  background: #e5e5e5;
+  padding: 450px 90px 0px 90px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 91%);
+}
+
+.Appfooter {
+  width: 150px;
+}
+
+.thirdSection {
+  padding: 100px 235px 100px 235px;
+}
+
+footer {
+  background-color: #7ab800;
+  text-align: center;
+  padding: 80px;
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
+}
+
+.tabsContainer button {
+  color: #000000;
+  min-width: 50px;
+  font-size: 26px;
+  padding: 0px 10px 10px 66px;
+}
+
+.tabsContainer .selected {
+  background-color: #000000;
+  color: #ffffff !important;
+  padding: 0px 10px 10px 2px;
+}
+
+.tabsContainer .scroller .indicator {
+  display: none;
+}
+
+/* Mobile View */
+
+@media (max-width: 360px) {
+  nav {
+    display: none;
+  }
+
+  .mob-wrapper {
+    display: block;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+
+  .mobnav a {
+    display: block;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-left: -70px;
+    background-color: #000;
+    text-align: center;
+  }
+
+  .mobnav {
+    display: none;
+    position: absolute;
+  }
+
+  .mobnav.display {
+    display: block;
+  }
+
+  .burgermenu {
+    width: 40px;
+  }
+
+  .firstSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .thirdSection {
+    padding: 0;
+  }
+
+  .firstContainer {
+    padding: 30px 30px 60px 30px;
+  }
+
+  .secondContainer {
+    padding: 200px 30px 74px 30px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 97%);
+  }
+}

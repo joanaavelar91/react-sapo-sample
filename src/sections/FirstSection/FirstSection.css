@@ -1,0 +1,212 @@
+.geometricContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonsRotateContainer button {
+  width: 117px;
+  height: 117px;
+  /* UI Properties */
+  background: #ff9933 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 0;
+  margin-right: 30px;
+}
+
+.buttonsRotateContainer button.selected {
+  width: 163px;
+  height: 163px;
+}
+
+.buttonsRotateContainer .colorFirst:hover {
+  background-color: #ff9933;
+}
+
+.buttonsRotateContainer .colorSecond,
+.buttonsRotateContainer .colorSecond:hover {
+  background-color: #33cc99;
+}
+
+.buttonsRotateContainer .colorThird,
+.buttonsRotateContainer .colorThird:hover {
+  background-color: #3399cc;
+}
+
+/*** Elems Triangles, Rectangles and Circles ***/
+
+.bodyElemContainer.colorThird .circOne,
+.bodyElemContainer.colorThird .circTwo,
+.bodyElemContainer.colorThird .recOne,
+.bodyElemContainer.colorThird .recTwo {
+  border: 6px solid #3399cc;
+}
+
+.bodyElemContainer.colorThird .triOne {
+  border-left: 111px solid #3399cc;
+}
+.bodyElemContainer.colorThird .triTwo {
+  border-left: 68px solid #3399cc;
+}
+
+.bodyElemContainer.colorFirst .circOne,
+.bodyElemContainer.colorFirst .circTwo,
+.bodyElemContainer.colorFirst .recOne,
+.bodyElemContainer.colorFirst .recTwo {
+  border: 6px solid #ff9933;
+}
+
+.bodyElemContainer.colorFirst .triOne {
+  border-left: 111px solid #ff9933;
+}
+.bodyElemContainer.colorFirst .triTwo {
+  border-left: 68px solid #ff9933;
+}
+
+.circOne {
+  top: 200px;
+  left: 177px;
+  width: 158px;
+  height: 158px;
+  border: 6px solid #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circTwo {
+  top: 50px;
+  left: 300px;
+  width: 88px;
+  height: 88px;
+  border: 6px solid #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.recOne {
+  top: 128px;
+  left: 182px;
+  width: 88px;
+  height: 130px;
+  transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+  border: 6px solid #33cc99;
+  opacity: 1;
+  position: relative;
+}
+
+.recTwo {
+  top: 0px;
+  left: 550px;
+  width: 88px;
+  height: 130px;
+  transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+  border: 6px solid #33cc99;
+  opacity: 1;
+  position: relative;
+}
+
+.triOne {
+  top: 400px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 111px solid #33cc99;
+  border-bottom: 83px solid transparent;
+  position: relative;
+}
+
+.triTwo {
+  top: 200px;
+  left: 416px;
+  width: 0;
+  height: 0;
+  border-top: 59px solid transparent;
+  border-left: 68px solid #33cc99;
+  border-bottom: 1px solid transparent;
+  opacity: 1;
+  position: relative;
+}
+
+.firstSectionLogo {
+  position: relative;
+  width: 1253px;
+  left: 333px;
+}
+
+/* Mobile View */
+
+@media (max-width: 360px) {
+  .firstSectionLogo {
+    position: relative;
+    top: 380px;
+    width: 370px;
+    left: -38px;
+  }
+
+  .bodyElemContainer {
+    position: relative;
+    top: -420px;
+  }
+
+  .buttonsRotateContainer button {
+    width: 66px;
+    height: 66px;
+    margin-right: 20px;
+  }
+
+  .buttonsRotateContainer button.selected {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circOne {
+    display: none;
+  }
+
+  .circTwo {
+    top: 200px;
+    left: -107px;
+    width: 88px;
+    height: 88px;
+    border: 6px solid #33cc99;
+    border-radius: 50%;
+  }
+
+  .recOne {
+    top: 250px;
+    left: 0;
+    width: 36px;
+    height: 53px;
+    transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+    border: 6px solid #33cc99;
+  }
+
+  .recTwo {
+    top: 0px;
+    left: 0;
+    width: 36px;
+    height: 53px;
+    transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+    border: 6px solid #33cc99;
+  }
+
+  .triOne {
+    top: 450px;
+    left: 100px;
+    border-top: 0px solid transparent;
+    border-left: 111px solid #33cc99;
+    border-bottom: 83px solid transparent;
+  }
+
+  .triTwo {
+    top: 200px;
+    left: 0;
+    border-top: 59px solid transparent;
+    border-left: 68px solid #33cc99;
+    border-bottom: 1px solid transparent;
+  }
+  .geometricContainer {
+    flex-direction: column-reverse;
+  }
+}

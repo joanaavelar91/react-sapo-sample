@@ -1,0 +1,163 @@
+.circSapo {
+  width: 633px;
+  height: 633px;
+  border: 6px dashed #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+  top: 200px;
+}
+
+.sapoLogo {
+  width: 624px;
+  height: 607px;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: relative;
+  left: 200px;
+  top: -600px;
+}
+
+.secondSectionContainer {
+  position: relative;
+  display: flex;
+}
+
+.sapoTextContainer {
+  position: relative;
+  font-size: 48px;
+  width: 780px;
+  top: 150px;
+}
+
+.sapoText.h4 {
+  padding-bottom: 50px;
+}
+
+.collapseText {
+  visibility: hidden;
+}
+
+.collapseTextButton.text {
+  font-weight: 900;
+  font-size: 100px;
+  height: 50px;
+  color: #000000;
+  vertical-align: middle;
+  padding: 0;
+  top: 60px;
+  left: 750px;
+}
+
+.circSapo.colorFirst {
+  border: 6px dashed #ff9933;
+}
+
+.circSapo.colorThird {
+  border: 6px dashed #3399cc;
+}
+
+h1 {
+  font-weight: 900px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.linksContainer {
+  position: relative;
+  bottom: 550px;
+  left: 653px;
+  width: fit-content;
+}
+
+.root.linkLeftButton {
+  background-color: #5b8f22;
+  border-radius: 0;
+  font-size: 24px;
+  clip-path: polygon(0 0, 100% 0%, 83% 100%, 0% 100%);
+  width: 248px;
+  padding: 10px 50px 10px 30px;
+}
+
+.root.linkLeftButton:hover {
+  background-color: #5b8f22;
+}
+
+.root.linkRightButton {
+  background-color: #7ab800;
+  border-radius: 0;
+  font-size: 24px;
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  width: 380px;
+  padding: 10px 50px 10px 30px;
+}
+
+.root.linkRightButton:hover {
+  background-color: #7ab800;
+}
+
+/* Mobile View */
+
+@media (max-width: 360px) {
+  .sapoLogo {
+    width: 73px;
+    height: 120px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(1);
+    position: relative;
+    left: 220px;
+    top: -250px;
+  }
+
+  .circSapo {
+    width: 184px;
+    height: 317px;
+    border: 6px dashed #33cc99;
+    opacity: 1;
+    border-radius: 50%;
+    position: relative;
+    top: 450px;
+    left: 54px;
+  }
+
+  article {
+    position: relative;
+    right: 180px;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+  }
+
+  .root.linkLeftButton {
+    margin-bottom: 30px;
+  }
+
+  .root.linkRightButton {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    padding: 10px 30px 10px 10px;
+    width: 300px;
+  }
+
+  .sapoTextContainer {
+    width: 210px;
+    top: 68px;
+  }
+
+  .collapseTextButton.text {
+    bottom: 23px;
+    left: 160px;
+    top: unset;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}

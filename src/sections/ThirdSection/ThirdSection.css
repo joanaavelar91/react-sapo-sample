@@ -1,0 +1,99 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  background: #e5e5e5;
+  padding: 100px;
+}
+
+.formContainer > div {
+  padding-bottom: 20px;
+}
+
+.formContainer > div > p {
+  font-weight: 600;
+}
+
+.formContainer > div > div:before,
+.formContainer > div > div:after {
+  border-bottom: 3px solid #000000 !important;
+}
+
+.inputLabel {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.formSapoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diagonalLine {
+  border-bottom: 6px dashed #33cc99;
+  width: 50%;
+  transform: rotate(45deg);
+  transform-origin: top left;
+
+  position: relative;
+  right: 49px;
+  top: 50px;
+}
+
+.diagonalLine.colorFirst {
+  border-bottom: 6px dashed #ff9933;
+}
+
+.diagonalLine.colorThird {
+  border-bottom: 6px dashed #3399cc;
+}
+
+.root.submitButton {
+  background-color: #7ab800;
+  border-radius: 0;
+  font-size: 26px;
+  clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.root.submitButton:hover {
+  background-color: #7ab800;
+}
+
+.thirdSectionTitle.h1 {
+  padding-bottom: 160px;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.thirdSectionLogo {
+  width: 240px;
+  height: 150px;
+}
+
+/* Mobile View */
+
+@media (max-width: 360px) {
+  .formSapoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diagonalLine {
+    right: -71px;
+    top: 17px;
+  }
+
+  .thirdSectionLogo {
+    position: relative;
+    left: 130px;
+    width: fit-content;
+  }
+
+  .formContainer {
+    padding: 100px 30px 80px 60px;
+  }
+
+  .thirdSectionTitle.h1 {
+    padding: 140px 90px 20px 30px;
+  }
+}
